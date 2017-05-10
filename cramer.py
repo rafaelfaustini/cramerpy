@@ -38,4 +38,22 @@ except
   dz := 0;
 # <----------------------->
 
+# <--Entrada de dados-->
+a1= input('Digite o valor correspondente a a1') 
+b1= input('Digite o valor correspondente a b1')
+c1= input('Digite o valor correspondente a c1')
+r1= input('Digite o valor correspondente a r1')
+
+a2= input('Digite o valor correspondente a a1')
+b2= input('Digite o valor correspondente a b1')
+c2= input('Digite o valor correspondente a c1')
+r2= input('Digite o valor correspondente a r2')
+
+a3= input('Digite o valor correspondente a a1')
+b3= input('Digite o valor correspondente a b1')
+c3= input('Digite o valor correspondente a c1')
+r3= input('Digite o valor correspondente a r3')
+# <-------------------->
+
+
  

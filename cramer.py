@@ -1,3 +1,11 @@
+# <--Tutorial-->
+printf('Sendo o modelo:')
+printf('----------------------------')
+printf(' (a1)x + (b1)y + (c1)z = r1 ')
+printf(' (a2)x + (b2)y + (c2)z = r2 ')
+printf(' (a3)x + (b3)y + (c3)z = r3 ')
+printf('----------------------------')
+# <------------>
 
 # <--Execução do cálculo-->
 d1= (a1*b2*c3)+(b1*c2*a3)+(c1*a2*b3)

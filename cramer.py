@@ -3,6 +3,10 @@ from time import gmtime, strftime
 
 data = strftime("%Y-%m-%d %H:%M:%S", gmtime())
   
+print('Qual é o cálculo que você deseja ?\n')
+print('(1) Equação 3x3')
+      
+  
 def tutorial():
   # <--Tutorial-->
   print('Sendo o modelo:')
@@ -71,30 +75,44 @@ def main():
 
 def output():
   # <--Saída de dados-->
-
-  print('\nSnizer Cramer By Rafael Faustini')
-  print(data)
-  print('Equação Com 3 Variaveis')
-  print('------------------------------------------------------------')
-  print('A diagonal Principal D é %d'%d1)
-  print('A diagonal Secundaria D é %d'%d2)
-  print('O valor de D é %d'%d3)
-  print('------------------------------------------------------------')
-  print('A diagonal Principal Dx é %d'%dx1)
-  print('A diagonal Secundaria Dx é %d'%dx2)
-  print('O valor de Dx é %d'%dx3)
-  print('O valor de X é %d'%dx)
-  print('------------------------------------------------------------')
-  print('A diagonal Principal  de Dy é %d'%dy1)
-  print('A diagonal Secundaria de Dy é %d'%dy2)
-  print('O valor de Dy é %d'%dy3)
-  print('O valor de Y é %d'%dy)
-  print('------------------------------------------------------------')
-  print('A diagonal Principal  de Dz é %d'%dz1)
-  print('A diagonal Secundaria de Dz é %d'%dz2)
-  print('O valor de Dz é %d'%dz3)
-  print('O valor de Z é %d'%dz)
-  print('------------------------------------------------------------')
+  
+  if d3==0 and dx3==0 and dy3==0 and dz3==0 :
+    print('\nSnizer Cramer By Rafael Faustini')
+    print(data)
+    print('Equação Com 3 Variaveis')
+    print('\nEste sistema é Possível Indeterminado\n')
+    print('D= 0 Dx= 0 Dy=0 Dz= 0')
+  else:
+    if d3==0 and dx3!=0 or dx3!=1:
+      print('\nSnizer Cramer By Rafael Faustini')
+      print(data)
+      print('Equação Com 3 Variaveis\n')
+      print('Este sistema é Impossível\n')
+      print('Ø')  
+    else:
+        print('\nSnizer Cramer By Rafael Faustini')
+        print(data)
+        print('Equação Com 3 Variaveis')
+        print('------------------------------------------------------------')
+        print('A diagonal Principal D é %d'%d1)
+        print('A diagonal Secundaria D é %d'%d2)
+        print('O valor de D é %d'%d3)
+        print('------------------------------------------------------------')
+        print('A diagonal Principal Dx é %d'%dx1)
+        print('A diagonal Secundaria Dx é %d'%dx2)
+        print('O valor de Dx é %d'%dx3)
+        print('O valor de X é %d'%dx)
+        print('------------------------------------------------------------')
+        print('A diagonal Principal  de Dy é %d'%dy1)
+        print('A diagonal Secundaria de Dy é %d'%dy2)
+        print('O valor de Dy é %d'%dy3)
+        print('O valor de Y é %d'%dy)
+        print('------------------------------------------------------------')
+        print('A diagonal Principal  de Dz é %d'%dz1)
+        print('A diagonal Secundaria de Dz é %d'%dz2)
+        print('O valor de Dz é %d'%dz3)
+        print('O valor de Z é %d'%dz)
+        print('------------------------------------------------------------')
 
 tutorial()
 main()

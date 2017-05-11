@@ -1,36 +1,20 @@
 from time import gmtime, strftime
-data = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-#Inicialização de variáveis
-a1=0
-b1=0
-c1=0
-r1=0
-a2=0
-b2=0
-c2=0
-r2=0
-a3=0
-b3=0
-c3=0
-r3=0
-d1=0
-d2=0
-d3=0
-dx1=0
-dx2=0
-dx3=0
-dx=0
-dy1=0
-dy2=0
-dy3=0
-dy=0
-dz1=0
-dz2=0
-dz3=0
-dz=0
-def entrada():
-  # <--Entrada de dados-->
+
+data = strftime("%Y-%m-%d %H:%M:%S", gmtime())
+  
+def tutorial():
+  # <--Tutorial-->
+  print('Sendo o modelo:')
+  print('----------------------------')
+  print(' (a1)x + (b1)y + (c1)z = r1 ')
+  print(' (a2)x + (b2)y + (c2)z = r2 ')
+  print(' (a3)x + (b3)y + (c3)z = r3 ')
+  print('----------------------------')
+  # <------------>
+  
+def main():
+    # <--Entrada de dados-->
   a1= input('Digite o valor correspondente a a1') 
   b1= input('Digite o valor correspondente a b1')
   c1= input('Digite o valor correspondente a c1')
@@ -45,20 +29,12 @@ def entrada():
   b3= input('Digite o valor correspondente a b3')
   c3= input('Digite o valor correspondente a c3')
   r3= input('Digite o valor correspondente a r3')
-  # <-------------------->
+  # <--------------------> 
   
-def tutorial():
-  # <--Tutorial-->
-  print('Sendo o modelo:')
-  print('----------------------------')
-  print(' (a1)x + (b1)y + (c1)z = r1 ')
-  print(' (a2)x + (b2)y + (c2)z = r2 ')
-  print(' (a3)x + (b3)y + (c3)z = r3 ')
-  print('----------------------------')
-  # <------------>
-  
-def main():
   # <--Execução do cálculo-->
+  
+  global d1,d2,d3,dx,dx1,dx2,dx3,dy1,dy2,dy3,dy,dz1,dz2,dz3,dz
+
   d1= (a1*b2*c3)+(b1*c2*a3)+(c1*a2*b3)
   d2= (a3*b2*c1)+(b3*c2*a1)+(c3*a2*b1)
   d3= d1-(d2)
@@ -66,7 +42,7 @@ def main():
   dx2= (r3*b2*c1)+(b3*c2*r1)+(c3*r2*b1)
   dx3= dx1-(dx2)
   try:
-    dx = dx3/ d3
+    dx = dx3/d3
   except: 
     dx=0
 
@@ -119,12 +95,7 @@ def output():
   print('O valor de Dz é %d'%dz3)
   print('O valor de Z é %d'%dz)
   print('------------------------------------------------------------')
-1
 
 tutorial()
-entrada()
 main()
 output()
-
-
-

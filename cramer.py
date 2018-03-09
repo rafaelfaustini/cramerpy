@@ -1,4 +1,4 @@
-from time import gmtime, strftime
+﻿from time import gmtime, strftime
 
 
 data = strftime("%Y-%m-%d %H:%M:%S", gmtime())
@@ -8,7 +8,7 @@ print('(1) Equação 3x3')
       
   
 def tutorial():
-  # <--Tutorial-->
+  # <--Tutorial do calculo-->
   print('Sendo o modelo:')
   print('----------------------------')
   print(' (a1)x + (b1)y + (c1)z = r1 ')
